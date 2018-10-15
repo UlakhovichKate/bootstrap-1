@@ -21,3 +21,10 @@ footer{
 .carousel-item img{
   background-position: center;
 }
+.row{
+  margin-bottom:20px;
+}
+/*.rating th:first-child{
+  position: absolute;
+  background-color: #fff;
+}*/
