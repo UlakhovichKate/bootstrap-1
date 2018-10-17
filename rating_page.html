@@ -46,7 +46,34 @@
           </div>
         </div>
         <div class="row">
-          <ul class="col-md-7 nav">
+          <div class="col-md-8">
+            <form>
+              <div class="form-row align-items-center">
+                <label for="exampleInputEmail1">Discrepancy level</label>
+                <input type="text" class="form-control input-level" id="exampleInputEmail1" placeholder="For example 0.4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4 text-right">
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-success">
+                <input type="checkbox" autocomplete="off"> P > F
+              </label>
+              <label class="btn btn-info ">
+                <input type="checkbox" autocomplete="off"> P = F
+              </label>
+              <label class="btn btn-warning ">
+                <input type="checkbox" autocomplete="off"> P < F
+              </label>
+              <label class="btn btn-danger ">
+                <input type="checkbox" autocomplete="off"> N D
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="col-md-6 nav">
             <li class="nav-item">
               <a class="nav-link active bg-warning" href="#">Headers</a>
             </li>
@@ -60,22 +87,6 @@
               <a class="nav-link" href="#">All</a>
             </li>
           </ul>
-          <div class="col-md-5 text-right">
-            <div class="btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-primary">
-                <input type="checkbox" autocomplete="off"> P < F
-              </label>
-              <label class="btn btn-primary ">
-                <input type="checkbox" autocomplete="off"> P = F
-              </label>
-              <label class="btn btn-primary ">
-                <input type="checkbox" autocomplete="off"> P > F
-              </label>
-              <label class="btn btn-primary ">
-                <input type="checkbox" autocomplete="off"> N D
-              </label>
-            </div>
-          </div>
         </div>
         <div class="row">
           <div class="table-responsive">
@@ -90,6 +101,7 @@
                     <th scope="col">Tabel</th>
                     <th scope="col">Department</th>
                     <th scope="col">Spetialisation</th>
+                    <th scope="col">P/F</th>
                     <th scope="col">Factor1.1</th>
                     <th scope="col">Factor1.2</th>
                     <th scope="col">Factor1.3</th>
@@ -105,6 +117,7 @@
                   <td scope="col" rowspan="2">031312</td>
                   <td scope="col" rowspan="2">UIT</td>
                   <td scope="col" rowspan="2">Ingenear of telecommunication 2 cat.</td>
+                  <td scope="col" >P</td>
                   <td scope="col">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
@@ -114,7 +127,7 @@
                       <option selected>5</option>
                     </select>
                   </td>
-                  <td scope="col" class="bg-warning">
+                  <td scope="col" class="alert-warning">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
                       <option selected>2</option>
@@ -135,7 +148,7 @@
                     </select>
                   </td>
                   <td scope="col">-</td>
-                  <td scope="col" class="bg-warning">
+                  <td scope="col" class="alert-warning">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
                       <option>2</option>
@@ -155,6 +168,7 @@
                   </td>
                 </tr>
                 <tr>
+                  <td scope="col" >F</td>
                   <td scope="col">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
@@ -164,13 +178,13 @@
                       <option>5</option>
                     </select>
                   </td>
-                  <td scope="col" class="bg-warning">
+                  <td scope="col" class="alert-warning">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
-                      <option >2</option>
+                      <option selected>2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option selected>5</option>
+                      <option >5</option>
                     </select>
                   </td>
                   <td scope="col">
@@ -191,13 +205,13 @@
                   <td scope="col">
                     -
                   </td>
-                  <td scope="col" class="bg-warning">
+                  <td scope="col" class="alert-warning">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
-                      <option selected>2</option>
+                      <option >2</option>
                       <option>3</option>
                       <option>4</option>
-                      <option>5</option>
+                      <option selected>5</option>
                     </select>
                   </td>
                   <td scope="col">
@@ -216,7 +230,8 @@
                   <td scope="col" rowspan="2">031312</td>
                   <td scope="col" rowspan="2">UIT</td>
                   <td scope="col" rowspan="2">Ingenear of telecommunication 2 cat.</td>
-                  <td scope="col">
+                  <td scope="col" >P</td>
+                  <td scope="col" class="alert-success">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
                       <option>2</option>
@@ -268,7 +283,8 @@
                   </td>
                 </tr>
                 <tr>
-                  <td scope="col">
+                  <td scope="col" >F</td>
+                  <td scope="col" class="alert-success">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
                       <option>2</option>
@@ -329,6 +345,7 @@
                   <td scope="col" rowspan="2">031312</td>
                   <td scope="col" rowspan="2">UIT</td>
                   <td scope="col" rowspan="2">Ingenear of telecommunication 2 cat.</td>
+                  <td scope="col" >P</td>
                   <td scope="col">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
@@ -349,7 +366,7 @@
                   </td>
                   <td scope="col">-</td>
                   <td scope="col">-</td>
-                  <td scope="col">
+                  <td scope="col" class="alert-info">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
                       <option>2</option>
@@ -379,6 +396,7 @@
                   </td>
                 </tr>
                 <tr>
+                  <td scope="col" >F</td>
                   <td scope="col">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
@@ -403,7 +421,7 @@
                   <td scope="col">
                     -
                   </td>
-                  <td scope="col">
+                  <td scope="col" class="alert-info">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
                       <option selected>2</option>
@@ -440,6 +458,7 @@
                   <td scope="col" rowspan="2">031312</td>
                   <td scope="col" rowspan="2">UIT</td>
                   <td scope="col" rowspan="2">Ingenear of telecommunication 2 cat.</td>
+                  <td scope="col" >P</td>
                   <td scope="col">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
@@ -490,6 +509,7 @@
                   </td>
                 </tr>
                 <tr>
+                  <td scope="col" >F</td>
                   <td scope="col">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
@@ -551,6 +571,7 @@
                   <td scope="col" rowspan="2">031312</td>
                   <td scope="col" rowspan="2">UIT</td>
                   <td scope="col" rowspan="2">Ingenear of telecommunication 2 cat.</td>
+                  <td scope="col" >P</td>
                   <td scope="col">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
@@ -560,7 +581,7 @@
                       <option>5</option>
                     </select>
                   </td>
-                  <td scope="col">
+                  <td scope="col" class="alert-error">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
                       <option>2</option>
@@ -601,6 +622,7 @@
                   </td>
                 </tr>
                 <tr>
+                  <td scope="col" >F</td>
                   <td scope="col">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
@@ -662,6 +684,7 @@
                   <td scope="col" rowspan="2">031312</td>
                   <td scope="col" rowspan="2">UIT</td>
                   <td scope="col" rowspan="2">Ingenear of telecommunication 2 cat.</td>
+                  <td scope="col" >P</td>
                   <td scope="col">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
@@ -671,7 +694,7 @@
                       <option selected>5</option>
                     </select>
                   </td>
-                  <td scope="col">
+                  <td scope="col" class="alert-danger">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
                       <option>2</option>
@@ -712,6 +735,7 @@
                   </td>
                 </tr>
                 <tr>
+                  <td scope="col" >F</td>
                   <td scope="col">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
@@ -721,7 +745,7 @@
                       <option>5</option>
                     </select>
                   </td>
-                  <td scope="col">
+                  <td scope="col" class="alert-danger">
                     <select class="form-control" id="exampleFormControlSelect2">
                       <option>1</option>
                       <option selected>2</option>

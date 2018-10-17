@@ -24,6 +24,10 @@ footer{
 .row{
   margin-bottom:20px;
 }
+.input-level{
+  width: 250px;
+  margin: 0 20px;
+}
 /*.rating th:first-child{
   position: absolute;
   background-color: #fff;
