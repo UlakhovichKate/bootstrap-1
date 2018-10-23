@@ -21,11 +21,11 @@ footer{
 .carousel-item img{
   background-position: center;
 }
-.row{
+.row, .col-md-8{
   margin-bottom:20px;
 }
 .input-level{
-  width: 250px;
+  width: 50%;
   margin: 0 20px;
 }
 /*.rating th:first-child{
